@@ -9,7 +9,6 @@ async function createConnection() {
     password: process.env.DB_PSWD,
     port: process.env.DB_PORT,
   };
-
   let pool;
 
   try {

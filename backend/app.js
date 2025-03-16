@@ -19,7 +19,7 @@ app.use(
     message: "Too many requests, please try again later.",
   })
 );
-app.use(cors());
+app.use(cors({origin : "http://localhost:3000"}), methods : ["GET", "POST"]);
 app.use(express.json());
 
 app.use("/api/v1", routes.userRoute);
